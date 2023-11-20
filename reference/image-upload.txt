@@ -1,0 +1,18 @@
+create a file input set its visibility hidden
+call the (change) and pass the event
+use a button and target click to the file input
+add a field to the from
+get the file from the component using event.target as HTMLInputElement.files.file[0]
+patch the form and update value and validity
+insatll multer and import in the backend
+create a multer storge providing destination and filename
+filename requires mime type to be modified
+pass in the storage to the post request
+modify the service to pass a formData object instead of a normal post object
+add the imagepath to the model and the post interface in the front ECONNREFUSED
+add the imagepath to the database using req.protocol and host and req.file.filename
+make the upload directory accesible from the app.js file using path and express.static
+
+const path = require('path')
+app.use("/images", express.static(path.join("backend/images")))
+
